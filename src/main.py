@@ -5,7 +5,7 @@ from pyspark.sql.functions import *
 
 def load_files(path):
     '''Function responsible for loading the files available for this challenge
-        For more information about the directories, access ../shape/readme.me
+        For more information about the directories, access ../readme.me
     '''
     '''CHANGE THE PATH OF THE VARIABLE ON LINE 204 ACCORDING TO YOUR ENVIRONMENT'''
 
