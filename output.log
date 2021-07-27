@@ -1,0 +1,46 @@
+D:\Projetos\shape\venv\Scripts\python.exe D:/Projetos/shape/src/main.py
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+21/06/21 19:51:37 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+# 1 – Total equipment failures that happened?
++--------------+
+|total_failures|
++--------------+
+|         36979|
++--------------+
+
+# 2 – Which equipment code had most failures?
+21/06/21 19:51:47 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
++--------------------------+------------+
+|top_failure_equipment_code|total_errors|
++--------------------------+------------+
+|                  E1AD07D4|        3753|
++--------------------------+------------+
+
+# 3 – Average amount of failures across equipment group, ordering by the amount of failures in ascending order?
++--------------------+----------------+
+|equipment_group_name|average_failures|
++--------------------+----------------+
+|            VAPQY59S|          2592.0|
+|            FGHQWR2Q|          2703.5|
+|            PA92NCXZ|          2726.5|
+|            NQWPA8D3|          2881.0|
+|            9N127Z5P|          3033.5|
+|            Z9K1SAP4|          3699.0|
++--------------------+----------------+
+
+21/06/21 19:51:50 WARN ProcfsMetricsGetter: Exception when trying to compute pagesize, as a result reporting of ProcessTree metrics is stopped
+21/06/21 19:51:51 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+D:\Projetos\shape\src\main.py:186: FutureWarning: As the xlwt package is no longer maintained, the xlwt engine will be removed in a future version of pandas. This is the only engine in pandas that supports writing in the xls format. Install openpyxl and write to an xlsx file instead. You can set the option io.excel.xls.writer to 'xlwt' to silence this warning. While this option is deprecated and will also raise a warning, it can be globally set and the warning suppressed.
+  question_1.to_excel(path+'\export\question_1_result.xls',index = False)
+D:\Projetos\shape\src\main.py:188: FutureWarning: As the xlwt package is no longer maintained, the xlwt engine will be removed in a future version of pandas. This is the only engine in pandas that supports writing in the xls format. Install openpyxl and write to an xlsx file instead. You can set the option io.excel.xls.writer to 'xlwt' to silence this warning. While this option is deprecated and will also raise a warning, it can be globally set and the warning suppressed.
+  question_2.to_excel(path + '\export\question_2_result.xls', index=False)
+D:\Projetos\shape\src\main.py:190: FutureWarning: As the xlwt package is no longer maintained, the xlwt engine will be removed in a future version of pandas. This is the only engine in pandas that supports writing in the xls format. Install openpyxl and write to an xlsx file instead. You can set the option io.excel.xls.writer to 'xlwt' to silence this warning. While this option is deprecated and will also raise a warning, it can be globally set and the warning suppressed.
+  question_3.to_excel(path + '\export\question_3_result.xls', index=False)
+QUESTION 1 REPORT SUCCESFULLY GENERATED, AVAILABLE IN: \shape\export\question_1_result.xls
+QUESTION 2 REPORT SUCCESFULLY GENERATED, AVAILABLE IN: \shape\export\question_2_result.xls
+QUESTION 3 REPORT SUCCESFULLY GENERATED, AVAILABLE IN: \shape\export\question_3_result.xls
+SHAPE CHALLENGE CONCLUDED SUCCESFULLY
+
+Process finished with exit code 0
